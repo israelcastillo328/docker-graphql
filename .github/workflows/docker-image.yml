@@ -30,10 +30,12 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t israelcastillo/docker-graphql:0.0.2 .
+        docker build -t israelcastillo/docker-graphql:latest .
 
     - name: Push Docker Image
       run: |
         docker push israelcastillo/docker-graphql:0.0.2
+        docker push israelcastillo/docker-graphql:latest
 
 
     
